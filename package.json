@@ -1,0 +1,16 @@
+{
+  "name": "external-diff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node-external-diff.js",
+  "type": "module",
+  "scripts": {
+    "test": "git -C mock-git-project --no-pager diff --ext-diff"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.8.5",
+    "winston": "^3.6.0"
+  }
+}
