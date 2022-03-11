@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { logger } from './shared/logger.js';
 import { getOriginalPatch, getDiffParameters } from './shared/diff-utilities.js';
 import { backupFile, restoreFile, stripCommentsFromFile } from './shared/file-utilities.js';

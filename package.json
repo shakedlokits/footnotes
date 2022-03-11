@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "bin": {
+    "footnotes-clean": "src/clean.js"
+  },
   "scripts": {
     "test:diff": "git -C mock-git-project --no-pager diff --ext-diff",
     "test:status": "git -C mock-git-project status"

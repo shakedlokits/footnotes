@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { logger } from './shared/logger.js';
 import { getFilterParameters } from './shared/diff-utilities.js';
 import { stripCommentsFromText } from './shared/comment-utilities.js';
