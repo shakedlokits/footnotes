@@ -1,4 +1,4 @@
-import {readFileSync, writeFileSync} from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { stripCommentsFromText } from './comment-utilities.js';
 
 export const backupFile = (filePath) => {

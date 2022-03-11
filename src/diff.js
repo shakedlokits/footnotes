@@ -2,6 +2,7 @@ import { logger } from './shared/logger.js';
 import { getOriginalPatch, getDiffParameters } from './shared/diff-utilities.js';
 import { backupFile, restoreFile, stripCommentsFromFile } from './shared/file-utilities.js';
 
+
 const parameters = getDiffParameters();
 logger.info("Running diff with parameters", parameters);
 

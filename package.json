@@ -1,18 +1,15 @@
 {
-  "name": "external-diff",
+  "name": "footnotes",
   "version": "1.0.0",
   "description": "",
-  "main": "node-external-diff.js",
   "type": "module",
   "scripts": {
-    "test": "git -C mock-git-project --no-pager diff --ext-diff"
+    "test:diff": "git -C mock-git-project --no-pager diff --ext-diff",
+    "test:status": "git -C mock-git-project status"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Shaked Lokits <shaked.lokits@gmail.com>",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
-    "diff": "^5.0.0",
-    "diff-match-patch": "^1.0.5",
-    "parse-diff": "^0.9.0",
     "shelljs": "^0.8.5",
     "winston": "^3.6.0"
   }
