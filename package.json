@@ -8,12 +8,17 @@
   },
   "scripts": {
     "test:diff": "git -C mock-git-project --no-pager diff --ext-diff",
-    "test:status": "git -C mock-git-project status"
+    "test:status": "git -C mock-git-project status",
+    "lint": "prettier --write src"
   },
   "author": "Shaked Lokits <shaked.lokits@gmail.com>",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "commander": "^9.0.0",
     "shelljs": "^0.8.5",
     "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
   }
 }
