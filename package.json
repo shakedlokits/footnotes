@@ -1,9 +1,12 @@
 {
   "name": "footnotes",
   "version": "1.0.0",
-  "description": "",
+  "author": "Shaked Lokits <shaked.lokits@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "description": "Keep your own code commentary to yourself!",
   "type": "module",
   "bin": {
+    "footnotes": "src/cli.js",
     "footnotes-clean": "src/clean.js"
   },
   "scripts": {
@@ -11,8 +14,6 @@
     "test:status": "git -C mock-git-project status",
     "lint": "prettier --write src"
   },
-  "author": "Shaked Lokits <shaked.lokits@gmail.com>",
-  "license": "GPL-3.0-or-later",
   "dependencies": {
     "commander": "^9.0.0",
     "shelljs": "^0.8.5",

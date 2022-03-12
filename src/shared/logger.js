@@ -1,7 +1,7 @@
 import { createLogger, format, transports } from 'winston';
 
 export const logger = createLogger({
-    transports: [new transports.File({ filename: '.footnotes.log' })],
+    transports: [new transports.File({ filename: '.footnotes/runtime.log' })],
     format: format.combine(
         format.timestamp({ format: 'YYYY-MM-dd HH:mm:ss,SSS' }),
         format.metadata({
