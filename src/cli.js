@@ -13,14 +13,12 @@ const init = () => {
     logger.info('Initializing project', { workingDirectory, directories })
 
     const isGitRepository = directories.includes('.git')
-    const isFootnotesRepository = directories.includes('.footnotes')
     if (!isGitRepository) {
         messages.cli.init.validations.git.publish()
         return
     }
 
-    const openingMessage = isFootnotesRepository ? messages.cli.init.validations.alreadyInitialized : messages.cli.init.welcome
-    openingMessage.publish()
+    messages.cli.init.welcome.publish()
 
     createDirectory('.footnotes/objects')
     messages.cli.init.directories.publish()
