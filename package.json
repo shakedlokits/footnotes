@@ -12,9 +12,11 @@
   "scripts": {
     "test:diff": "git -C mock-git-project --no-pager diff --ext-diff",
     "test:status": "git -C mock-git-project status",
+    "test:cli": "cd mock-git-project && node ../src/cli.js init",
     "lint": "prettier --write src"
   },
   "dependencies": {
+    "chalk": "^5.0.1",
     "commander": "^9.0.0",
     "shelljs": "^0.8.5",
     "winston": "^3.6.0"
